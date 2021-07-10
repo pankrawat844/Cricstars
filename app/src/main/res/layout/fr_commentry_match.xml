@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_commentry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mk_type="TwinFishesSpinner"
+        android:layout_centerInParent="true"
+        app:mk_color="#D51C1C"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/teal_700"
+
+    android:id="@+id/relative"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linear"
+        android:background="#fff"
+        android:layout_width="1px"
+        android:layout_height="50dp"/>
+<LinearLayout
+
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
+    android:id="@+id/linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img"
+        android:src="@drawable/tournament"
+        android:tint="#fff"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="Team"
+        android:textColor="#fff"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textSize="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</RelativeLayout>

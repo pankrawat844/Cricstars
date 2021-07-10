@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+ >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="SQUADS"
+            android:textColor="#6c6c6c"
+            android:textSize="17dp" />
+
+        <RelativeLayout
+
+            android:id="@+id/relative_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tmp" />
+
+            <TextView
+                android:textColor="#535252"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_logo"
+                android:drawableRight="@drawable/right_arrow"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:gravity="center_vertical"
+                android:text="ASIAN CRICKET TEAM"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:background="#fff"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_logo2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tmp" />
+
+            <TextView
+                android:textColor="#535252"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_logo2"
+                android:drawableRight="@drawable/right_arrow"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:gravity="center_vertical"
+                android:text="ASIAN CRICKET TEAM"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="INFO"
+            android:textColor="#6c6c6c"
+            android:textSize="17dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.6"
+            android:background="#fff"
+            android:columnCount="2"
+            android:padding="10dp">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Tournament" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="Tournament name" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Round" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="Round for the match" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Match Type" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="One day or test" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Overs" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="50 Overs / 20 Overs / 10 Overs" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Date-Time" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="20-3-2019" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Venue" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="Wankhede, Mumbai" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Toss" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="Team 1 won the toss and elected to field " />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_columnWeight="1"
+                android:text="Ball Type" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_columnWeight="1.6"
+                android:text="Season ball" />
+        </GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Match Notes"
+            android:textAllCaps="true"
+
+            android:textColor="#6c6c6c"
+            android:textSize="17dp" />
+        <TextView
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="#fff"
+android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_columnWeight="1.6"
+            android:text="Some matche notes goes here" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

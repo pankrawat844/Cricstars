@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tournamentScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imgVProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_24">
+
+                <ImageView
+                    android:id="@+id/imgVProfileEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="@string/add_tournament_banner"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layGalleryIconCover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@color/red_text" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camera_pop_up" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-27dp">
+
+            <RelativeLayout
+                android:id="@+id/rlLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/grey_trans" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/memberType"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/memberType"
+                android:textColor="@color/dark_gray" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="Team Name"
+                android:textColorHint="@color/dark_gray_50_opacity"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/teamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"
+                    android:lines="1"
+                    android:maxLength="200"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/captainNameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="Captain Name"
+                android:textColorHint="@color/dark_gray_50_opacity">
+
+                <EditText
+                    android:id="@+id/captainName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/captainAgeLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="Captain Age"
+
+                android:textColorHint="@color/dark_gray_50_opacity">
+
+                <EditText
+                    android:id="@+id/captainAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/captainOccupationLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="Captain Occupation"
+
+                android:textColorHint="@color/dark_gray_50_opacity">
+
+                <EditText
+                    android:id="@+id/captainOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"
+                    android:lines="1"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/sp_16" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/memberType"
+                android:textColor="@color/dark_gray" />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:entries="@array/memberType"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/green_background_color"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <!--        <include-->
+        <!--            android:id="@+id/layoutGuestUser"-->
+        <!--            layout="@layout/raw_guest_user"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:visibility="gone" />-->
+
+    </LinearLayout>
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:mk_color="#D51C1C"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:mk_type="TwinFishesSpinner" />
+</RelativeLayout>
+</ScrollView>

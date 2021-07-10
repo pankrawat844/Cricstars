@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Cricstars</string>
+    <string name="partnerKey">KmQlNcb36a82e2b934620951c26e7bd54971b</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">setting</string>
+    <string name="tournament_contact_organizer_team_registration">Allow players to contact me for Team Registration</string>
+    <string name="add_tournament_banner">Add Tournament Banner</string>
+    <string name="add_logo">Add Logo</string>
+    <string name="tournament_name">Tournament Name*</string>
+    <string name="tournament_city">City*</string>
+    <string name="tournament_ground">Ground*</string>
+    <string name="tournament_organizer_name">Organizer Name*</string>
+    <string name="tournament_organizer_number">Organizer Number*</string>
+    <string name="start_date">Start Date*</string>
+    <string name="end_date">End Date*</string>
+    <string name="select_ball_type">Select Ball Type</string>
+    <string name="tennis_ball">TENNIS</string>
+    <string name="leather_ball">LEATHER</string>
+    <string name="other_ball">OTHER</string>
+    <string name="about_the_tournament">About the Tournament(Optional)</string>
+    <string name="btn_next">Next</string>
+    <string name="next">Next</string>
+    <string name="two_inning">Test Match</string>
+    <string name="one_inning">Limited Overs</string>
+
+    <string-array name="bowl_bat">
+        <item>Choose First</item>
+        <item>Bat</item>
+        <item>Bowl</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_all_team">AllTeamActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

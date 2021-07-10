@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="0dp"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:text="Change photo"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+            <EditText
+                android:id="@+id/name"
+                android:hint="Player Name"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:hint="Phone No"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Date of Birth"
+                android:singleLine="true"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:hint="Email Address"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
+                android:hint="Player Age"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:textColor="#000"
+                android:singleLine="true"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:text="Playing role"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <Spinner
+            android:id="@+id/member_type"
+            android:entries="@array/memberType"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <TextView
+            android:text="Batting style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <Spinner
+            android:visibility="gone"
+            android:entries="@array/batting_style"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="gone"
+            android:text="Bowling style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:visibility="gone"
+            android:entries="@array/bowling_style"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="13dp"
+            android:text="Update"
+            android:textColor="#fff"
+            android:id="@+id/update"
+            android:gravity="center"
+            android:background="#569bcc"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mk_type="TwinFishesSpinner"
+            app:mk_color="#D51C1C"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

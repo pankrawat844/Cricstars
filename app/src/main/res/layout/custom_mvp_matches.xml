@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:layout_margin="10dp"
+    android:background="#fff"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:src="@drawable/player_default"
+    android:id="@+id/img"
+    android:layout_width="60dp"
+    android:layout_height="60dp"/>
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_alignLeft="@+id/img"
+        android:layout_below="@+id/img"
+        android:layout_alignRight="@+id/img"
+        android:tint="#fff"
+        android:background="@drawable/round_live"
+        android:backgroundTint="#5aa65e"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_menu_share"
+android:padding="3dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <com.github.florent37.shapeofview.shapes.CircleView
+        app:shape_circle_borderColor="#49b93f"
+        app:shape_circle_borderWidth="2sp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/rank"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <TextView
+            android:background="#f5fcf3"
+            android:gravity="center"
+            android:text="1"
+            android:id="@+id/tv_rank"
+            android:textColor="#43a325"
+            android:textSize="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </com.github.florent37.shapeofview.shapes.CircleView>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_toLeftOf="@id/rank"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textColor="#000"
+            android:text="Suraj Verma"
+            android:textSize="15dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+android:layout_marginTop="5dp"
+
+            android:text="Mumbai XI A"
+            android:textSize="13dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/line"
+        android:background="@color/lineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@+id/line"
+        android:layout_toRightOf="@id/img"
+        android:weightSum="4.5"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Batting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Bowling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Fielding"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Total"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linear2"
+        android:layout_toRightOf="@id/img"
+        android:weightSum="4.5"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="10.10"
+        android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="0.104"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="1.109"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="11.323"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_home_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/pagetite"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:text=""
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_home_score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mk_type="TwinFishesSpinner"
+            android:layout_centerInParent="true"
+            app:mk_color="#D51C1C"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

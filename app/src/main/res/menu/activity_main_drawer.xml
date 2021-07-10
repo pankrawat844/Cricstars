@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_matches"
+            android:icon="@drawable/matches"
+            android:title="Matches" />
+        <item
+            android:id="@+id/nav_start_match"
+            android:icon="@drawable/nav_add_tournament"
+            android:title="Start A Match" />
+        <item
+            android:id="@+id/nav_add_tournament"
+            android:icon="@drawable/nav_add_tournament"
+            android:visible="false"
+            android:title="Add Tournament" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/tournament"
+            android:visible="false"
+            android:title="Tournament" />
+        <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/myteam"
+            android:title="My Team" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_mymatches"
+            android:icon="@drawable/myteam"
+            android:title="My Matches" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_baseline_library_books_24"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Rate the app" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share the app" />
+
+        <item
+            android:id="@+id/nav_follow"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Follow us" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_share"
+            android:checkable="true"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_manage3"
+            android:icon="@drawable/profile"
+            android:title="Logout" />
+    </group>
+
+<!--    <item android:title="Communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_share"-->
+<!--                android:icon="@drawable/ic_menu_share"-->
+<!--                android:title="Share" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="Send" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_webview" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue="http://sport.t-10.in/" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_webview" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue="https://t-10.in/ecosystem.php" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_webview" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue="https://t-10.in/ecosystem.php" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_matches"
+        android:name="com.app.cricstars.fragment.RecentMatchesFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_recent_matches" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_webview"
+        />
+
+    <fragment
+        android:id="@+id/nav_follow"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+
+        tools:layout="@layout/fragment_webview" />
+
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.app.cricstars.fragment.WebviewFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/nav_team"
+        android:name="com.app.cricstars.fragment.TeamsTrmntFrg"
+        android:label="@string/app_name"
+        tools:layout="@layout/fr_teams_trmnt" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.app.cricstars.fragment.ProfileFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_profile" />
+
+  <fragment
+        android:id="@+id/nav_mymatches"
+        android:name="com.app.cricstars.fragment.UserMatchesFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_recent_matches" >
+      <argument
+          android:name="param1"
+          app:argType="string"
+          android:defaultValue='"My Matches"' />
+  </fragment>
+
+
+
+</navigation>

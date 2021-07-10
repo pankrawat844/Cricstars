@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#fff"
+    android:background="@drawable/round_live"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_close"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/proxima_nova_extra_bold"
+            android:text="Close"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.github.florent37.shapeofview.shapes.CircleView
+            app:shape_circle_borderWidth="2dp"
+            app:shape_circle_borderColor="#fff"
+            android:id="@+id/shape"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:background="#000"
+                android:layout_gravity="center"
+                android:src="@drawable/player_default"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+        </com.github.florent37.shapeofview.shapes.CircleView>
+        <LinearLayout
+
+            android:id="@+id/linear"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/view"
+            android:layout_toRightOf="@id/shape"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+
+                android:textSize="23dp"
+                android:text="My Name"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:text="Nashik"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:text="Since 20-feb-2019"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="1"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/proxima_nova_extra_bold"
+                    android:textColor="#2fac8f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Following"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_gravity="center"
+                android:background="@color/lineColor"
+                android:layout_width="1sp"
+                android:layout_height="60dp"/>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="1"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/proxima_nova_extra_bold"
+                    android:textColor="#2fac8f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Followers"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_gravity="center"
+                android:background="@color/lineColor"
+                android:layout_width="1sp"
+                android:layout_height="60dp"/>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="1"
+                    android:textSize="26dp"
+                    android:fontFamily="@font/proxima_nova_extra_bold"
+                    android:textColor="#2fac8f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Profile Views"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_below="@+id/linear2"
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/linear2"
+            android:text="My Profile"
+            android:textColor="#000"
+            android:textSize="23dp"
+            android:id="@+id/tv_pro"
+            android:fontFamily="@font/proxima_nova_extra_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:text="EDIT"
+            android:id="@+id/tv_edit"
+            android:textSize="17dp"
+            android:textColor="#2ca94b"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/proxima_nova_cond_bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_pro"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="13dp"
+                    android:text="MOBILE NUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="8889898989"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:text="Playing Role"
+                    android:textAllCaps="true"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="Bowler"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:text="Bowling Style"
+                    android:textAllCaps="true"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="Left-arm Medium"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:text="EMAIL"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="Email@someemail.com"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:textSize="13dp"
+                    android:text="Batting Role"
+                    android:textAllCaps="true"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="RHB"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="13dp"
+                    android:text="DAte of birth"
+                    android:textAllCaps="true"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="#000"
+                    android:text="1999-02-23"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

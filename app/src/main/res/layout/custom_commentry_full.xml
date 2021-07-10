@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/headerLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/endofOver"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="End of Over: 18 -  D red: 205/3 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/strikeBatsman"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:text="Suchit sharma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/runsNballs"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="6 (5)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/nonstrikeBatsman"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:text="Anil sharma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/runsNballs2"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="16 (15)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bowlerName"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:text="Sumit sharma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/oversDetail"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="3-0-45-0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ballByBallLayout"
+        android:padding="10dp"
+        android:layout_marginTop="1sp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout">
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/tv_over"
+            android:text="4.5"
+            android:layout_alignRight="@+id/circle"
+            android:layout_alignLeft="@id/circle"
+            android:gravity="center"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.github.florent37.shapeofview.shapes.CircleView
+            app:shape_circle_borderWidth="2dp"
+            app:shape_circle_borderColor="#e9b046"
+            android:background="#f9f5e3"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/circle"
+            android:layout_below="@+id/tv_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/run"
+                android:textColor="#000"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.github.florent37.shapeofview.shapes.CircleView>
+        <View
+            android:id="@+id/line"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/circle"
+            android:background="@color/lineColor"
+            android:layout_width="1sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/commantary"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/line"
+            android:textColor="#000"
+            android:text="Alsba zaya to suchit sharma, 1 run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

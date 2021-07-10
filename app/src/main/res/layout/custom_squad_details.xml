@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#fff"
+    android:elevation="3dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_blue" />
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/img"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:padding="9dp"
+            android:background="#e6edfa"
+            android:src="@drawable/bat"
+            android:id="@+id/img_ball_or_bat"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+        </com.github.florent37.shapeofview.shapes.CircleView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="Player Name"
+        android:textColor="#000"
+        android:textSize="14dp" />
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+
+    android:background="@color/lineColor"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/tv_title"
+    android:background="#000"
+    android:textSize="19dp"
+    android:fontFamily="@font/proxima_nova_regular"
+    android:text="Group A(League Matches)"
+    android:textColor="#fff"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/hide"
+        android:background="@color/lineColor"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="9.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="2.3"
+            android:text="Teams"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mat."
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="Won"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="Lost"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="Tied"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="NR."
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="Pts"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:layout_weight="1"
+            android:text="NRR"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="1sp"
+        android:layout_marginRight="1sp"
+        android:layout_marginLeft="1sp"
+        android:background="#fff"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="9.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="2.3"
+            android:text="Some team name here"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="5"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="4"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="1"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="10.0"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="25"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_weight="1"
+            android:text="1.66"
+            />
+
+    </LinearLayout>
+</LinearLayout>

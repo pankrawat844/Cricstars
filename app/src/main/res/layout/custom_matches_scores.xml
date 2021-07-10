@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="#fff"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_league_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="League name "
+            android:textAllCaps="true"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_match_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_live"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+            android:text="Live"
+            android:visibility="gone"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_match_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College, City | 25 Feb 19 | 20.0 Ov" />
+
+    <TextView
+        android:id="@+id/tv_match_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="LEAGUE MATCHES"
+        android:textColor="#4d4c4c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/lineColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="KXIP(Team Name)"
+            android:textAllCaps="true"
+            android:textColor="#4d4c4c"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_team1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/tv_team1_overs"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="120/3"
+            android:visibility="gone"
+
+            android:textAllCaps="true"
+            android:textColor="#4197cc"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_team1_overs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"
+            android:text="(20 Ov)"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:text="CSK (Second Team)"
+            android:textAllCaps="true"
+            android:textColor="#4d4c4c"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_team2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/tv_team2_overs"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="120/7"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="#4197cc"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_team2_overs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="(17.4 Ov)"
+            android:visibility="gone"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/lineColor" />
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_semibold"
+        android:text="KXIP won the toss and elected to bat"
+        android:textSize="15dp" />
+</LinearLayout>

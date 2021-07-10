@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:elevation="4dp"
+    android:id="@+id/relative"
+    android:layout_margin="7dp"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/ongoing"
+    android:text="Ongoing"
+    android:background="@drawable/round_live"
+    android:elevation="5dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:backgroundTint="#41a6b6"
+    android:textColor="#fff"
+    android:layout_alignRight="@+id/shape"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_roundRect_bottomLeftRadius="6dp"
+        app:shape_roundRect_bottomRightRadius="6dp"
+        app:shape_roundRect_topLeftRadius="6dp"
+        app:shape_roundRect_topRightRadius="6dp">
+
+        <ImageView
+
+            android:scaleType="fitXY"
+            android:id="@+id/img"
+            android:src="@drawable/tmp_tournaments"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+    <TextView
+        android:layout_below="@+id/shape"
+        android:layout_toLeftOf="@id/tv_follow"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv_title"
+        android:text="22 feb, 2019 to 22 march 2019"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/place"
+        android:text="Nashik"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Follow"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="#fe0a9f40"
+        android:textColor="#fff"
+        android:layout_below="@id/shape"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:elevation="3dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:id="@+id/tv_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.mymatches.OvernLocationActivity">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:weightSum="2.2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tmp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:id="@+id/team1Name"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="Team 1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/nextBtnColor"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:layout_margin="0dp"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/proxima_nova_extra_bold"
+                android:textColor="#b4b2b2"
+                android:text="VS"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tmp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:id="@+id/team2Name"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="Team 2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textColor="@color/nextBtnColor"
+                    android:layout_margin="0dp"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout">
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Limited Overs"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="Test Match"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="Match Title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/dark_gray_50_opacity">
+            <EditText
+                android:id="@+id/matchTite"
+                android:singleLine="true"
+                android:inputType="text"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/toss_won"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Toss Won."
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60" />
+
+
+            <Spinner
+                android:id="@+id/choose_bat_bowl"
+                android:singleLine="true"
+                android:hint="Choose First."
+                android:entries="@array/bowl_bat"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/spinner_bg"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="No. of Overs."
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/dark_gray_50_opacity">
+            <EditText
+                android:id="@+id/overs"
+                android:singleLine="true"
+                android:inputType="number"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:id="@+id/batsman1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Select Batsman 1"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60" />
+
+            <Spinner
+                android:id="@+id/batsman2"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Select Batsman 2"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60" />
+
+            <Spinner
+                android:id="@+id/bowler"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Select Bowler"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/spinner_bg"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60" />
+            <EditText
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="City/Town"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="Ground"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="text"
+                android:singleLine="true"
+                android:hint="Date and Time"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_alignParentBottom="true"
+                android:text="Next"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/for_next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:mk_type="TwinFishesSpinner"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            app:mk_color="#D51C1C"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+
+<LinearLayout
+    android:descendantFocusability="blocksDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#000"
+        android:layout_margin="15dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+           
+            android:background="#fff"
+            android:layout_marginLeft="1sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginBottom="1sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:text="Bat"
+android:id="@+id/tv_bat"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+android:background="#fff"
+android:id="@+id/tv_bowl"
+            android:layout_marginLeft="1sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginBottom="1sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:text="Bowl"
+
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:background="#fff"
+android:id="@+id/tv_field"
+            android:layout_marginLeft="1sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginBottom="1sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:text="Field"
+           
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:background="#fff"
+android:id="@+id/tv_mvp"
+            android:layout_marginLeft="1sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginBottom="1sp"
+            android:layout_marginRight="1sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:text="MVP"
+           
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        android:id="@+id/recycler_leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+<!--<android.support.design.widget.TabLayout-->
+<!--android:visibility="gone"-->
+<!--android:background="@color/colorPrimary"-->
+<!--app:tabMode="fixed"-->
+<!--app:tabSelectedTextColor="#fff"-->
+<!--android:id="@+id/tabs"-->
+<!--app:tabIndicatorHeight="4dp"-->
+<!--app:tabTextColor="#fff"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"/>-->
+
+<!--<android.support.v4.view.ViewPager-->
+<!--android:visibility="gone"-->
+<!--android:id="@+id/container"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->

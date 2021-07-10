@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+>
+    <LinearLayout
+        android:id="@+id/linear_team1"
+        android:animateLayoutChanges="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:elevation="3dp"
+            android:id="@+id/relative_team1"
+            android:background="#fff"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="TEAM 1 Name"
+                android:id="@+id/tv_team1_name"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_toLeftOf="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+            android:id="@+id/tv_score"
+                android:layout_toLeftOf="@id/tv_overs"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="15dp"
+                android:text="220"
+                android:textColor="#000"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_overs"
+                android:layout_toLeftOf="@id/iv_dropdown"
+                android:textSize="12dp"
+                android:text="(34.2 Ov)"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_dropdown"
+                android:rotation="90"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/hide_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:padding="7dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Batsman"
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="B"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="4s"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="6s"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="SR"
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_batting_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="1sp"
+
+            android:background="#fff"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+android:fontFamily="@font/proxima_nova_regular"
+               android:text="Extras"
+               android:textColor="#000"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/extras"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="11 (b4,nb1,wd6)"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1sp"
+android:visibility="gone"
+            android:background="#fff"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Total"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="270/10 (74.0Ov)"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+            <TextView
+                android:layout_marginTop="1sp"
+                android:padding="6dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="13dp"
+                android:text="Next to bat"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="6dp"
+                android:background="#fff"
+                android:textStyle="italic"
+                android:visibility="gone"
+                android:text="Batsman two, Batsman three , Batsman four , Batsman five, Batsman six"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="1sp"
+                android:padding="6dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="13dp"
+                android:text="Fall of Wickets"
+                android:textColor="#000"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/inning1fallOfwickets"
+                android:padding="5dp"
+                android:background="#fff"
+                android:text=""
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:padding="7dp"
+            android:background="#f4f3f3"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Bowlers"
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="O"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="M"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="W"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Eco."
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_bowling_team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative_team2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+android:elevation="3dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_team2_name"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:text="TEAM 2 Name"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:layout_toLeftOf="@+id/tv_score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_score2"
+                android:layout_toLeftOf="@id/tv_overs2"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="15dp"
+                android:text="220"
+                android:textColor="#000"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_overs2"
+                android:layout_toLeftOf="@id/iv_dropdown2"
+                android:textSize="12dp"
+                android:text="(34.2 Ov)"
+                android:fontFamily="@font/proxima_nova_regular"
+
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_dropdown2"
+                android:rotation="90"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/hide_team2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="7dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Batsman"
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="B"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="4s"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="6s"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="SR"
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recycler_batting_team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="1sp"
+
+            android:background="#fff"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/proxima_nova_regular"
+
+                android:text="Extras"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/extras2"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="0 (b0,nb0,wd0)"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1sp"
+android:visibility="gone"
+            android:background="#fff"
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:text="Total"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="270/10 (74.0Ov)"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="1sp"
+                android:padding="6dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="13dp"
+                android:text="Next to bat"
+                android:textColor="#000"
+                android:background="#fff"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:padding="6dp"
+                android:background="#fff"
+                android:textStyle="italic"
+                android:visibility="gone"
+                android:text="Batsman two, Batsman three , Batsman four , Batsman five, Batsman six"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="1sp"
+                android:padding="5dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textSize="13dp"
+                android:text="Fall of Wickets"
+                android:textColor="#000"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/inning2fallOfwickets"
+                android:padding="5dp"
+                android:background="#fff"
+                android:text=""
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:padding="7dp"
+            android:background="#f4f3f3"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Bowlers"
+                android:layout_weight="4.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="O"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="M"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="R"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="W"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Eco."
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_bowling_team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
